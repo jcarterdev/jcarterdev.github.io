@@ -1,9 +1,9 @@
-.center {
+.center-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    width: 25%;
+    width: 33%;
 }
 
 p {
@@ -12,6 +12,7 @@ p {
 
 .centered-text {
     text-align: center;
+    font-family: Arial, serif;
 }
 
 .content{
@@ -20,4 +21,17 @@ p {
     margin-right: auto;
     padding-top: 15px;
     width: 50%;
+}
+
+a[href^="mailto:"] {
+    color: #337ab7;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+a[href^="mailto:"]:hover {
+    color: #007bff;
+    background-color: #f5f5f5;
 }
