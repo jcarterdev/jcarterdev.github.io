@@ -1,15 +1,3 @@
-.center-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 33%;
-}
-
-p {
-    text-align: center;
-}
-
 .centered-text {
     text-align: center;
     font-family: Arial, serif;
@@ -21,6 +9,12 @@ p {
     margin-right: auto;
     padding-top: 15px;
     width: 50%;
+    /*font-size: medium;*/
+    font-size: 1.2em;
+}
+
+span {
+    white-space: nowrap; /* Prevent line breaks within the span */
 }
 
 a[href^="mailto:"] {
@@ -34,4 +28,34 @@ a[href^="mailto:"] {
 a[href^="mailto:"]:hover {
     color: #007bff;
     background-color: #f5f5f5;
+}
+
+.header-container, .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center; /* Vertically align content */
+}
+
+.header-container img {
+    width: 100%;
+    max-width: 500px; /* Optional: Set a max-width for large screens */
+}
+
+.content-container {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: center; /* Horizontally center the image */
+    }
+    .content-container {
+        text-align: left;
+    }
 }
